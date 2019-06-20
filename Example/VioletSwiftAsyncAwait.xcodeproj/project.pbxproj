@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		08D7FF2351C94107A2D76987 /* Pods_VioletSwiftAsyncAwait_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A3D58E7682BA4DB54B5902 /* Pods_VioletSwiftAsyncAwait_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		299018D622BC056D0097D049 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299018D522BC056D0097D049 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D19E24B2CAB646E3D69A520 /* VioletSwiftAsyncAwait.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VioletSwiftAsyncAwait.podspec; path = ../VioletSwiftAsyncAwait.podspec; sourceTree = "<group>"; };
+		0D19E24B2CAB646E3D69A520 /* VioletSwiftAsyncAwait.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VioletSwiftAsyncAwait.podspec; path = ../VioletSwiftAsyncAwait.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		16995BDBD265EE0602DF65F7 /* Pods-VioletSwiftAsyncAwait_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletSwiftAsyncAwait_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VioletSwiftAsyncAwait_Tests/Pods-VioletSwiftAsyncAwait_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2CB2D754F25CD3DA44106502 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		299018D522BC056D0097D049 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		2CB2D754F25CD3DA44106502 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* VioletSwiftAsyncAwait_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VioletSwiftAsyncAwait_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		60B1DE6309E29A122F348D07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		60B1DE6309E29A122F348D07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		68B94C560640225A60B695A6 /* Pods-VioletSwiftAsyncAwait_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioletSwiftAsyncAwait_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VioletSwiftAsyncAwait_Tests/Pods-VioletSwiftAsyncAwait_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A3D58E7682BA4DB54B5902 /* Pods_VioletSwiftAsyncAwait_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VioletSwiftAsyncAwait_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,7 +57,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				299018D522BC056D0097D049 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -130,14 +130,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+						DevelopmentTeam = 869FLFY3VH;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -146,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -225,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				299018D622BC056D0097D049 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +332,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68B94C560640225A60B695A6 /* Pods-VioletSwiftAsyncAwait_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 869FLFY3VH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -347,9 +346,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VioletSwiftAsyncAwait_Example.app/VioletSwiftAsyncAwait_Example";
 			};
 			name = Debug;
 		};
@@ -357,6 +356,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16995BDBD265EE0602DF65F7 /* Pods-VioletSwiftAsyncAwait_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 869FLFY3VH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -367,7 +368,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VioletSwiftAsyncAwait_Example.app/VioletSwiftAsyncAwait_Example";
 			};
 			name = Release;
 		};

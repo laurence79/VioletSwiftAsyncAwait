@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.3.4)
+  - Quick (1.3.4)
+  - VioletSwiftAsyncAwait (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.3.4)
+  - Quick (~> 1.3.2)
+  - VioletSwiftAsyncAwait (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  VioletSwiftAsyncAwait:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  VioletSwiftAsyncAwait: f007ac91f33482fe2c6d4b8506c5286bd0623154
+
+PODFILE CHECKSUM: f16912122e1dcf4c8d65f1a4c6f3a48b35d7a17c
+
+COCOAPODS: 1.5.3

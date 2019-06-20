@@ -1,6 +1,6 @@
 # VioletSwiftAsyncAwait
 
-[![CI Status](https://img.shields.io/travis/DaemonLaurence/VioletSwiftAsyncAwait.svg?style=flat)](https://travis-ci.org/DaemonLaurence/VioletSwiftAsyncAwait)
+[![CI Status](https://img.shields.io/travis/laurence79/VioletSwiftAsyncAwait.svg?style=flat)](https://travis-ci.org/laurence79/VioletSwiftAsyncAwait)
 [![Version](https://img.shields.io/cocoapods/v/VioletSwiftAsyncAwait.svg?style=flat)](https://cocoapods.org/pods/VioletSwiftAsyncAwait)
 [![License](https://img.shields.io/cocoapods/l/VioletSwiftAsyncAwait.svg?style=flat)](https://cocoapods.org/pods/VioletSwiftAsyncAwait)
 [![Platform](https://img.shields.io/cocoapods/p/VioletSwiftAsyncAwait.svg?style=flat)](https://cocoapods.org/pods/VioletSwiftAsyncAwait)
@@ -19,10 +19,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'VioletSwiftAsyncAwait'
 ```
-
-## Author
-
-DaemonLaurence, laurence@hartgill.co.uk
 
 ## License
 
