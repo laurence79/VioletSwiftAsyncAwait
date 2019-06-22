@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'VioletSwiftAsyncAwait'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of VioletSwiftAsyncAwait.'
+  s.summary          = 'Provides utilities for writing asynchronous code using async/await constructs.'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +19,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+VioletSwiftAsyncAwait allows you to write asynchronous code as if it were synchronous. Similar to the async and await
+keywords in C# and javascript (among others). Under the hood it uses dispatch queues and semaphores.
                        DESC
 
   s.homepage         = 'https://github.com/laurence79/VioletSwiftAsyncAwait'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'laurence79' => 'laurence@hartgill.co.uk' }
   s.source           = { :git => 'https://github.com/laurence79/VioletSwiftAsyncAwait.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '11.0'
   s.source_files = 'VioletSwiftAsyncAwait/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'VioletSwiftAsyncAwait' => ['VioletSwiftAsyncAwait/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
